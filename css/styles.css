@@ -172,6 +172,16 @@ img {
     color: var(--white-color);
 }
 
+/* Heading global styles */
+.main-heading {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: var(--brand-color);
+}
+
 /* Hero conatiner styles */
 .hero__container {
     background-image: url(../img/hero-bg.jpg);
@@ -230,12 +240,12 @@ img {
     line-height: 22px;
     transition: color 0.3s ease;
 }
-.sitenav__link[aria-current="bottom-line"] {
+.bottom-line {
     border-bottom: 2px solid var(--white-color);
     padding-bottom: 3px;
     transition: border-color 0.3s ease;
 }
-.sitenav__link[aria-current="bottom-line"]:hover {
+.bottom-line:hover {
     border-color: var(--brand-color);
 }
 
@@ -331,7 +341,7 @@ img {
 }
 .hero__page__link:hover,
 .hero__page__link:active,
-.hero__page__link[aria-current="checked"]{
+.checked{
     color: var(--brand-color);
     border-bottom: 1px solid var(--brand-color);
     padding: 2px;
@@ -341,6 +351,8 @@ img {
 .main-content {
     flex-grow: 1;
 }
+
+/* About us  */
 
 
 
