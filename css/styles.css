@@ -379,33 +379,37 @@ img {
 /* about-us list */
 .about-us__list {
     display: flex;
-    list-style: none;
-}
-
-.about-us__item:not(:last-child) {
-    margin-right: 80px;
 }
 
 .about-us__link {
-    flex-grow: 1;
+    display: inline-block;
     width: 100%;
     max-width: 350px;
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 41px;
-    padding-bottom: 56px;
     border: 1px solid rgba(0, 0, 0, 0.03);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.02);
     border-radius: 10px;
     background-color: #fff;
+    flex-grow: 1;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 41px;
+    padding-bottom: 56px;
     text-decoration: none;
     color: var(--brand-color);
     transition: background-color 0.3s ease,
     color 0.3s ease;
 }
-.about-us__link:hover {
+.about-us__link:hover,
+.hovered {
     background-color: var(--text-green);
     color: var(--white-color);
+}
+.about-us__link:hover .about-us__item__text {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.about-us__link:not(:last-child) {
+    margin-right: 80px;
 }
 
 .about-us__item__heading {
@@ -420,7 +424,6 @@ img {
 .about-us__item__text {
     font-family: 'Raleway';
     font-weight: 500;
-    color: var(--text-color);
 }
 
 /* Retina display  */
