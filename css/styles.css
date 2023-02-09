@@ -1,5 +1,74 @@
-html {
+/* Fonts */
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Light.woff2) format('woff2'),
+        url(../fonts/Lato-Light.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.woff2) format("woff2"),
+        url(../fonts/Raleway-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Regular.woff2) format("woff2"),
+        url(../fonts/Lato-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Bold.woff2) format("woff2"),
+        url(../fonts/Lato-Bold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Medium.woff2) format("woff2"),
+        url(../fonts/Raleway-Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Black.woff2) format("woff2"),
+        url(../fonts/Lato-Black.woff) format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Css custom props */
+:root {
+    --white-color: #fff;
+    --brand-color: #285a43;
+    --text-color: rgba(18, 18, 18, 0.8);
+    --text-green: #337a5b;
+}
+
+/* Global styles */
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
     height: 100%;
     scroll-behavior: smooth;
 }
@@ -17,10 +86,10 @@ body {
     padding: 0;
     margin: 0;
     font-size: 16px;
-    font-family: "Arial", sans-serif;
+    font-family: "Lato", "Raleway", "Arial", sans-serif;
     line-height: 1.5;
-    background-color: #fff;
-    color: #222;
+    background-color: #f5f5f5;
+    color: var(--text-color) ;
 }
 
 img {
@@ -28,13 +97,67 @@ img {
     height: auto;
 }
 
-.container {
+/* Containers */
+.lg-container {
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1480px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.md-container {
+    width: 100%;
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Buttons */
+.main-btn {
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: inherit;
+    border-radius: 3px;
+}
+.main-btn__white {
+    border: 1px solid var(--white-color);
+}
+.main-btn__white:hover {
+    border: 1px solid var(--brand-color);
+}
+
+.main-btn__order {
+    background-color: var(--brand-color);
+    padding: 12px 50px;
+    transition: background-color 0.3s ease;
+}
+.main-btn__order:hover {
+    background-color: inherit;
+    border: 1px solid var(--white-color);
+}
+
+.main-btn__green {
+    border: 1px solid rgba(51, 122, 91, 0.6);
+    color: var(--text-green);
+    padding: 8px 24px;
+    transition: background-color 0.3s ease,
+    color 0.3s ease;
+}
+.main-btn__green:hover {
+    background-color: var(--text-green);
+    color: var(--white-color);
+}
+
+/* Site Header styles */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Main content */
