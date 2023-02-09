@@ -426,7 +426,8 @@ img {
     font-weight: 500;
 }
 
-/* Products */
+ /* Products  */
+
 .products__heading {
     text-align: center;
     margin-bottom: 35px;
@@ -436,6 +437,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin-left: -27px;
+    list-style: none;
 }
 
 .products__item {
@@ -446,19 +448,19 @@ img {
 
 .img-btn__wrapper {
     position: relative;
-    margin-bottom: 10px;
 }
 .products__img {
     display: flex;
     width: 280px;
     height: 250px;
     object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
 }
 /* Button styles */
 .like__input {
     position: absolute;
     top: 15px;
-    right: 35px;
+    right: 15px;
     appearance: none;
     width: 32px;
     height: 32px;
@@ -475,6 +477,13 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px 20px;
+}
+
+/* Products info content */
+.products__info__content {
+    display: flex;
+    padding: 10px 24px;
+    background-color: var(--white-color);
 }
 
 
