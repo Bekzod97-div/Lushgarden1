@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css starter</title>
+    <title>LushGarden</title>
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="./css/normalize.css">
@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- Header -->
-    <div class="lg-container">
+    <div class="hero__container lg-container">
         <header class="site-header">
             <a class="logo" href="index.html" >
                 <img class="logo__img" src="./img/logo.svg" alt="site logo" width="104" height="64">
@@ -34,10 +34,28 @@
                  </li>
               </ul>
 
-              <a class="main-btn main-btn__white" href="#">Call Us</a>
+              <a class="main-btn main-btn__white sitenav__btn" href="#">Call Us</a>
             </nav>
 
         </header>
+
+        <section class="hero">
+            <h1 class="visually-hidden">Hero Content</h1>
+            <div class="hero__content">
+                <h2 class="hero__content__heading">Nature's Beauty Delivered to You</h2>
+                <p class="hero__content__text">Nature's beauty is just a click away with our online flower and plant shop. We offer a <br> wide variety of flowers that will bring a touch of nature to your home!</p>
+                <div class="hero__btn__wrapper">
+                    <a class="main-btn__order main-btn" href="#">Book Now</a>
+                    <a href="" class="main-btn main-btn__white hero__content__btn"> Watch Video</a>
+                </div>
+            </div>
+
+            <ol class="hero__page__link__list">
+                <li class="hero__page__link__item"><a href="#" class="hero__page__link" aria-current="checked">01</a></li>
+                <li class="hero__page__link__item"><a href="#" class="hero__page__link">02</a></li>
+                <li class="hero__page__link__item"><a href="#" class="hero__page__link">03</a></li>
+            </ol>
+        </section>
     </div>
 
     <script src="./js/main.js"></script>

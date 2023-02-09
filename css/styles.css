@@ -97,6 +97,20 @@ img {
     height: auto;
 }
 
+/* Visually hidden */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 /* Containers */
 .lg-container {
     width: 100%;
@@ -118,7 +132,7 @@ img {
 
 /* Buttons */
 .main-btn {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: var(--white-color);
     background-color: inherit;
@@ -126,6 +140,7 @@ img {
 }
 .main-btn__white {
     border: 1px solid var(--white-color);
+    font-weight: 700;
 }
 .main-btn__white:hover {
     border: 1px solid var(--brand-color);
@@ -133,7 +148,8 @@ img {
 
 .main-btn__order {
     background-color: var(--brand-color);
-    padding: 12px 50px;
+    border: 1px solid transparent;
+    padding: 11px 49px;
     transition: background-color 0.3s ease;
 }
 .main-btn__order:hover {
@@ -153,14 +169,156 @@ img {
     color: var(--white-color);
 }
 
+/* Hero conatiner styles */
+.hero__container {
+    background-image: url(../img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #9db2ad;
+    padding-top: 40px;
+}
+
 /* Site Header styles */
 .site-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 100px;
 }
+
+/* Logo */
+.logo:hover {
+    opacity: 0.6;
+}
+
+.logo__img {
+    display: flex;
+    width: 104px;
+    height: 64px;
+}
+
+/* Site nav */
+.sitenav {
+    display: flex;
+    align-items: center;
+}
+
+.sitenav__list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-right: 67px;
+}
+
+.sitenav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.sitenav__link {
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    transition: color 0.3s ease;
+}
+.sitenav__link[aria-current="bottom-line"] {
+    border-bottom: 2px solid var(--white-color);
+    padding-bottom: 3px;
+    transition: border-color 0.3s ease;
+}
+.sitenav__link[aria-current="bottom-line"]:hover {
+    border-color: var(--brand-color);
+}
+
+
+.sitenav__link:hover {
+    color: var(--brand-color);
+}
+
+
+.sitenav__btn {
+    padding: 10px 49px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    padding-left: 250px;
+    padding-top: 155px;
+    padding-bottom: 300px;
+}
+
+/* Hero content */
+.hero__content {
+    width: 100%;
+    max-width: 950px;
+    margin-right: 185px;
+    color: var(--white-color);
+}
+
+.hero__content__heading {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    margin-bottom: 15px;
+}
+
+.hero__content__text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #f8f8f8;
+    text-align: center;
+    margin-bottom: 37px;
+}
+
+.hero__btn__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__content__btn {
+    padding: 11px 34px;
+    margin-left: 10px;
+}
+/* .hero__content__btn__inner::before {
+    display: inline-flex;
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/play-video.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: "";
+} */
 
 /* Main content */
 .main-content {
     flex-grow: 1;
+}
+
+
+
+/* Retina display  */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+.hero__container {
+    background-image: url(../img/hero-bg@2x.jpg);
+}
 }
