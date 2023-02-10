@@ -163,9 +163,10 @@ img {
 .main-btn__green {
     border: 1px solid rgba(51, 122, 91, 0.6);
     color: var(--text-green);
-    padding: 8px 24px;
+    padding: 6px 22px;
     transition: background-color 0.3s ease,
     color 0.3s ease;
+    white-space: nowrap;
 }
 .main-btn__green:hover {
     background-color: var(--text-green);
@@ -422,6 +423,7 @@ img {
 }
 
 .about-us__item__text {
+    display: block;
     font-family: 'Raleway';
     font-weight: 500;
 }
@@ -444,6 +446,7 @@ img {
     margin-left: 27px;
     width: 100%;
     max-width: 280px;
+    margin-bottom: 27px;
 }
 
 .img-btn__wrapper {
@@ -470,6 +473,7 @@ img {
     background-position: center;
     background-size: 20px 20px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .like__input:checked {
@@ -482,34 +486,90 @@ img {
 /* Products info content */
 .products__info__content {
     display: flex;
+    align-items: center;
     padding: 10px 24px;
     background-color: var(--white-color);
 }
 
-
-
-/* .like-btn {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    padding: 6px;
-    background-color: var(--white-color);
-    border: transparent;
-    border-radius: 50%;
-    cursor: pointer;
+.products__info__wrapper {
+    margin-right: auto;
 }
 
-.heart {
+.products__info__heading {
+    font-weight: 900;
+    text-transform: capitalize;
+    color: var(--text-green);
+    margin-bottom: 5px;
+}
+
+.products__info__sale {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    text-decoration: line-through;
+    color: rgba(18, 18, 18, 0.5);
+    margin-right: 7px;
+}
+
+.products__info__pricing {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 17px;
+    color: var(--text-green);
+}
+
+/* Info */
+.info {
     display: flex;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    color: none;
+    margin-top: 110px;
+    margin-bottom: 120px;
 }
 
-.liked {
-    color: transparent;
-} */
+.info__img {
+    display: flex;
+    width: 720px;
+    height: 760px;
+    object-fit: cover;
+}
+
+/* Info content list */
+
+.info__content__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.info__content__item {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 360px;
+    padding-left: 52px;
+    padding-top: 52px;
+    padding-bottom: 55px;
+    padding-right: 0;
+    flex-grow: 1;
+    background-color: #fcfcfc;
+}
+
+.darker {
+    background-color: #f8f8f8;
+}
+
+.info__content__heading {
+    display: block;
+    color: var(--brand-color);
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.info__content__img {
+    display: flex;
+    width: 126px;
+    height: 126px;
+}
+
+
 
 /* Retina display  */
 @media
