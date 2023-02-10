@@ -602,6 +602,60 @@ img {
     margin-bottom: 10px;
 }
 
+/* Testimonial */
+.testimonial {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.testimonial__wrapper {
+    display: flex;
+}
+
+/* Testimonial content */
+.testimonial__content {
+    width: 100%;
+    max-width: 360px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+    background-image: url(../img/trees-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding-top: 40px;
+    padding-left: 44px;
+    padding-bottom: 74px;
+    border-radius: 10px;
+}
+.testimonial__content:not(:last-child) {
+    margin-right: 70px;
+}
+
+.testimonial__content__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 31px;
+}
+
+.testimonial__content__img {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+}
+
+.testimonial__content__name {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--brand-color);
+}
+
+.testimonial__content__text {
+    font-weight: 500;
+    font-family: "Raleway";
+}
+
 
 /* Retina display  */
 @media
