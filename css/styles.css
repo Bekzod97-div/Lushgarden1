@@ -569,6 +569,38 @@ img {
     height: 126px;
 }
 
+/* Gallery */
+.gallery__heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.gallery {
+    display: flex;
+    margin-left: -10px;
+}
+
+.gallery__lg-img {
+    flex-shrink: 0;
+    display: flex;
+    object-fit: cover;
+    width: 500px;
+    height: 660px;
+}
+
+/* Gallery img box */
+.gallery__img__box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery__md-img {
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 460px;
+    height: 325px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 
 
 /* Retina display  */
