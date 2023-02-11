@@ -736,6 +736,7 @@ img {
 
 /* Blog content */
 .blog__content {
+    flex-grow: 1;
     width: 100%;
     max-width: 360px;
 }
@@ -755,12 +756,18 @@ img {
     font-size: 20px;
     line-height: 28px;
     color: var(--brand-color);
+    margin-bottom: 24px;
+}
+.first__heading {
     margin-bottom: 5px;
 }
 
 .blog__content__text {
     font-family: "Raleway";
     font-weight: 500;
+    margin-bottom: 19px;
+}
+.first__text {
     margin-bottom: 10px;
 }
 
