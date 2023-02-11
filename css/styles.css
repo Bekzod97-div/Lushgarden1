@@ -814,6 +814,14 @@ img {
     content: "";
 }
 
+/* Footer */
+.site-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--brand-color);
+}
+
 
 /* Retina display  */
 @media
